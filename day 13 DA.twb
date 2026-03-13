@@ -1,0 +1,1184 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_company_sales_dataset' inline='true' name='federated.1gqxshq1h0ppyd1dpo8kg1hof13p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_company_sales_dataset' name='textscan.1ehl0ox0xqhxjz1b601it1uombcy'>
+            <connection class='textscan' directory='C:/Users/Subham kushwaha/Downloads' filename='tableau_company_sales_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ehl0ox0xqhxjz1b601it1uombcy' name='oregon_real_estate_2026_.csv' table='[oregon_real_estate_2026_#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='type' ordinal='0' />
+            <column datatype='string' name='sub_type' ordinal='1' />
+            <column datatype='string' name='text' ordinal='2' />
+            <column datatype='integer' name='listPrice' ordinal='3' />
+            <column datatype='integer' name='sqft' ordinal='4' />
+            <column datatype='integer' name='stories' ordinal='5' />
+            <column datatype='integer' name='beds' ordinal='6' />
+            <column datatype='integer' name='baths' ordinal='7' />
+            <column datatype='integer' name='baths_full' ordinal='8' />
+            <column datatype='integer' name='baths_full_calc' ordinal='9' />
+            <column datatype='integer' name='garage' ordinal='10' />
+            <column datatype='integer' name='year_built' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_type]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>sub_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listPrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[listPrice]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>listPrice</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>sqft</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stories</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stories]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>stories</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[beds]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>beds</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baths]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>baths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baths_full</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baths_full]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>baths_full</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baths_full_calc</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baths_full_calc]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>baths_full_calc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>garage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[garage]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>garage</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_built</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_built]</local-name>
+            <parent-name>[oregon_real_estate_2026_.csv]</parent-name>
+            <remote-alias>year_built</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='profit' datatype='integer' name='[Calculation_2153990809350144]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Sales]) - SUM([Cost])' />
+      </column>
+      <column caption='oregon_real_estate_2026_.csv' datatype='table' name='[__tableau_internal_object_id__].[oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A]' role='measure' type='quantitative' />
+      <column caption='Baths' datatype='integer' name='[baths]' role='measure' type='quantitative' />
+      <column caption='Baths Full' datatype='integer' name='[baths_full]' role='measure' type='quantitative' />
+      <column caption='Baths Full Calc' datatype='integer' name='[baths_full_calc]' role='measure' type='quantitative' />
+      <column caption='Beds' datatype='integer' name='[beds]' role='measure' type='quantitative' />
+      <column caption='Garage' datatype='integer' name='[garage]' role='measure' type='quantitative' />
+      <column caption='List Price' datatype='integer' name='[listPrice]' role='measure' type='quantitative' />
+      <column caption='Sqft' datatype='integer' name='[sqft]' role='measure' type='quantitative' />
+      <column caption='Stories' datatype='integer' name='[stories]' role='measure' type='quantitative' />
+      <column caption='Sub Type' datatype='string' name='[sub_type]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Year Built' datatype='integer' name='[year_built]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/SUBHAM~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0mhrcub0vxhsrh147dhjf0ee0f8t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/12/2026 04:45:10 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sub_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sub_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sub_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>2</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9566</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>listPrice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[listPrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>listPrice</remote-alias>
+              <ordinal>3</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1331</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sqft</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sqft]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sqft</remote-alias>
+              <ordinal>4</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2166</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stories</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stories</remote-alias>
+              <ordinal>5</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>beds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[beds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>beds</remote-alias>
+              <ordinal>6</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baths</remote-alias>
+              <ordinal>7</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baths_full</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baths_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baths_full</remote-alias>
+              <ordinal>8</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baths_full_calc</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baths_full_calc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baths_full_calc</remote-alias>
+              <ordinal>9</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>garage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[garage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>garage</remote-alias>
+              <ordinal>10</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_built</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_built]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_built</remote-alias>
+              <ordinal>11</ordinal>
+              <family>oregon_real_estate_2026_.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>172</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='oregon_real_estate_2026_.csv' id='oregon_real_estate_2026_.csv_A2C6BA6A96B5415A9FA808B7066F605A'>
+            <properties context=''>
+              <relation connection='textscan.1ehl0ox0xqhxjz1b601it1uombcy' name='oregon_real_estate_2026_.csv' table='[oregon_real_estate_2026_#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='type' ordinal='0' />
+                  <column datatype='string' name='sub_type' ordinal='1' />
+                  <column datatype='string' name='text' ordinal='2' />
+                  <column datatype='integer' name='listPrice' ordinal='3' />
+                  <column datatype='integer' name='sqft' ordinal='4' />
+                  <column datatype='integer' name='stories' ordinal='5' />
+                  <column datatype='integer' name='beds' ordinal='6' />
+                  <column datatype='integer' name='baths' ordinal='7' />
+                  <column datatype='integer' name='baths_full' ordinal='8' />
+                  <column datatype='integer' name='baths_full_calc' ordinal='9' />
+                  <column datatype='integer' name='garage' ordinal='10' />
+                  <column datatype='integer' name='year_built' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='_2026_ (_2026_)' inline='true' name='federated.096vlmm18yxad519tgue20vr88rl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='_2026_' name='excel-direct.1gd1vcb0ox5umn1a36mzt01qob1x'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Subham kushwaha/Downloads/_2026_.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1gd1vcb0ox5umn1a36mzt01qob1x' name='_2026_' table='[_2026_$]' type='table'>
+          <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='type' ordinal='0' />
+            <column datatype='string' name='sub_type' ordinal='1' />
+            <column datatype='string' name='text' ordinal='2' />
+            <column datatype='integer' name='listPrice' ordinal='3' />
+            <column datatype='integer' name='sqft' ordinal='4' />
+            <column datatype='integer' name='stories' ordinal='5' />
+            <column datatype='integer' name='beds' ordinal='6' />
+            <column datatype='integer' name='baths' ordinal='7' />
+            <column datatype='integer' name='baths_full' ordinal='8' />
+            <column datatype='integer' name='baths_full_calc' ordinal='9' />
+            <column datatype='integer' name='garage' ordinal='10' />
+            <column datatype='integer' name='year_built' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L10001:no:A1:L10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sub_type]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>sub_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listPrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[listPrice]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>listPrice</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>sqft</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stories</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stories]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>stories</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[beds]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>beds</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baths]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>baths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baths_full</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baths_full]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>baths_full</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baths_full_calc</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baths_full_calc]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>baths_full_calc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>garage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[garage]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>garage</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_built</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_built]</local-name>
+            <parent-name>[_2026_]</parent-name>
+            <remote-alias>year_built</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='_2026_' datatype='table' name='[__tableau_internal_object_id__].[!2026!_6B53236307A24CAAA9005AA939C918E0]' role='measure' type='quantitative' />
+      <column caption='Baths' datatype='integer' name='[baths]' role='measure' type='quantitative' />
+      <column caption='Baths Full' datatype='integer' name='[baths_full]' role='measure' type='quantitative' />
+      <column caption='Baths Full Calc' datatype='integer' name='[baths_full_calc]' role='measure' type='quantitative' />
+      <column caption='Beds' datatype='integer' name='[beds]' role='measure' type='quantitative' />
+      <column caption='Garage' datatype='integer' name='[garage]' role='measure' type='quantitative' />
+      <column caption='List Price' datatype='integer' name='[listPrice]' role='measure' type='quantitative' />
+      <column caption='Sqft' datatype='integer' name='[sqft]' role='measure' type='quantitative' />
+      <column caption='Stories' datatype='integer' name='[stories]' role='measure' type='quantitative' />
+      <column caption='Sub Type' datatype='string' name='[sub_type]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Year Built' datatype='integer' name='[year_built]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/SUBHAM~1/AppData/Local/Temp/TableauTemp/#TableauTemp_05owezg0lbw6qb17ibwuw0r6jjoz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/12/2026 04:46:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>_2026_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sub_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sub_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sub_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>_2026_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>2</ordinal>
+              <family>_2026_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9566</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>listPrice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[listPrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>listPrice</remote-alias>
+              <ordinal>3</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1331</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sqft</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sqft]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sqft</remote-alias>
+              <ordinal>4</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2166</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stories</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stories</remote-alias>
+              <ordinal>5</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>beds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[beds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>beds</remote-alias>
+              <ordinal>6</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baths</remote-alias>
+              <ordinal>7</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baths_full</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baths_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baths_full</remote-alias>
+              <ordinal>8</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baths_full_calc</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baths_full_calc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baths_full_calc</remote-alias>
+              <ordinal>9</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>garage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[garage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>garage</remote-alias>
+              <ordinal>10</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_built</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_built]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_built</remote-alias>
+              <ordinal>11</ordinal>
+              <family>_2026_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>172</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[!2026!_6B53236307A24CAAA9005AA939C918E0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='_2026_' id='!2026!_6B53236307A24CAAA9005AA939C918E0'>
+            <properties context=''>
+              <relation connection='excel-direct.1gd1vcb0ox5umn1a36mzt01qob1x' name='_2026_' table='[_2026_$]' type='table'>
+                <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='type' ordinal='0' />
+                  <column datatype='string' name='sub_type' ordinal='1' />
+                  <column datatype='string' name='text' ordinal='2' />
+                  <column datatype='integer' name='listPrice' ordinal='3' />
+                  <column datatype='integer' name='sqft' ordinal='4' />
+                  <column datatype='integer' name='stories' ordinal='5' />
+                  <column datatype='integer' name='beds' ordinal='6' />
+                  <column datatype='integer' name='baths' ordinal='7' />
+                  <column datatype='integer' name='baths_full' ordinal='8' />
+                  <column datatype='integer' name='baths_full_calc' ordinal='9' />
+                  <column datatype='integer' name='garage' ordinal='10' />
+                  <column datatype='integer' name='year_built' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_company_sales_dataset' name='federated.1gqxshq1h0ppyd1dpo8kg1hof13p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gqxshq1h0ppyd1dpo8kg1hof13p'>
+            <column caption='List Price' datatype='integer' name='[listPrice]' role='measure' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Sqft' datatype='integer' name='[sqft]' role='measure' type='quantitative' />
+            <column caption='Stories' datatype='integer' name='[stories]' role='measure' type='quantitative' />
+            <column-instance column='[listPrice]' derivation='Sum' name='[sum:listPrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft]' derivation='Sum' name='[sum:sqft:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stories]' derivation='Sum' name='[sum:stories:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:listPrice:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:sqft:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:sqft:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:stories:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:sqft:qk] + [federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:stories:qk])</rows>
+        <cols>([federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[none:type:nk] * [federated.1gqxshq1h0ppyd1dpo8kg1hof13p].[sum:listPrice:qk])</cols>
+      </table>
+      <simple-id uuid='{00389AE1-18C5-4525-AB03-77AF00FE5CC9}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{539BC8B2-FDF4-4CA0-9504-AB8EB3D550AF}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='_2026_ (_2026_)' name='federated.096vlmm18yxad519tgue20vr88rl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.096vlmm18yxad519tgue20vr88rl'>
+            <column caption='_2026_' datatype='table' name='[__tableau_internal_object_id__].[!2026!_6B53236307A24CAAA9005AA939C918E0]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[!2026!_6B53236307A24CAAA9005AA939C918E0]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:!2026!_6B53236307A24CAAA9005AA939C918E0:qk]' pivot='key' type='quantitative' />
+            <column caption='Baths' datatype='integer' name='[baths]' role='measure' type='quantitative' />
+            <column-instance column='[sub_type]' derivation='None' name='[none:sub_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Sub Type' datatype='string' name='[sub_type]' role='dimension' type='nominal' />
+            <column-instance column='[baths]' derivation='Sum' name='[sum:baths:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.096vlmm18yxad519tgue20vr88rl].[__tableau_internal_object_id__].[cnt:!2026!_6B53236307A24CAAA9005AA939C918E0:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.096vlmm18yxad519tgue20vr88rl].[__tableau_internal_object_id__].[cnt:!2026!_6B53236307A24CAAA9005AA939C918E0:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.096vlmm18yxad519tgue20vr88rl].[none:sub_type:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.096vlmm18yxad519tgue20vr88rl].[__tableau_internal_object_id__].[cnt:!2026!_6B53236307A24CAAA9005AA939C918E0:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.096vlmm18yxad519tgue20vr88rl].[none:sub_type:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.096vlmm18yxad519tgue20vr88rl].[sum:baths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.096vlmm18yxad519tgue20vr88rl].[none:sub_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.096vlmm18yxad519tgue20vr88rl].[__tableau_internal_object_id__].[cnt:!2026!_6B53236307A24CAAA9005AA939C918E0:qk] + [federated.096vlmm18yxad519tgue20vr88rl].[sum:baths:qk])</rows>
+        <cols>[federated.096vlmm18yxad519tgue20vr88rl].[none:type:nk]</cols>
+      </table>
+      <simple-id uuid='{285E9482-CC7C-4FC5-9618-ECF3B0F658E7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{22A9B9E9-44E8-4909-AC88-0B472C4660A9}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F31DA2A-D8D9-4701-BC11-B672BB55F62D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.096vlmm18yxad519tgue20vr88rl].[none:sub_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.096vlmm18yxad519tgue20vr88rl].[none:sub_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8A702C80-0E24-4489-89A5-2D481F90E282}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
